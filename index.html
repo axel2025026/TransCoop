@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transcripción Musical</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>🎵 Transcripción Musical</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#transcribir">Transcribir</a></li>
+                    <li><a href="#mas-buscados">Más Buscados</a></li>
+                    <li><a href="#recomendados">Recomendados</a></li>
+                    <li><a href="#comunidad">Comunidad</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Sección Principal -->
+    <section id="inicio" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h2>Transcribe música a partituras</h2>
+                <p>Convierte cualquier enlace de música en partituras para guitarra, bajo, batería, piano y más instrumentos.</p>
+                <a href="#transcribir" class="btn">Comenzar Ahora</a>
+            </div>
+            <div class="hero-image">
+                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 500 400'%3E%3Crect fill='%23f5f5f5' width='500' height='400'/%3E%3Cpath fill='%23e0e0e0' d='M100,100 L400,100 L400,300 L100,300 Z'/%3E%3Ccircle fill='%234CAF50' cx='150' cy='150' r='20'/%3E%3Ccircle fill='%234CAF50' cx='200' cy='150' r='20'/%3E%3Ccircle fill='%234CAF50' cx='250' cy='150' r='20'/%3E%3Ccircle fill='%234CAF50' cx='300' cy='150' r='20'/%3E%3Cline stroke='%23333' stroke-width='2' x1='100' y1='200' x2='400' y2='200'/%3E%3Cline stroke='%23333' stroke-width='2' x1='100' y1='250' x2='400' y2='250'/%3E%3C/svg%3E" alt="Partitura">
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Transcripción -->
+    <section id="transcribir" class="transcription-section">
+        <div class="container">
+            <h2>Transcribir Música</h2>
+            <div class="transcription-form">
+                <div class="input-group">
+                    <label for="music-link">Enlace de la música:</label>
+                    <input type="text" id="music-link" placeholder="Pega aquí el enlace de YouTube, Spotify, etc.">
+                </div>
+                <div class="input-group">
+                    <label for="instrument">Instrumento:</label>
+                    <select id="instrument">
+                        <option value="guitarra">Guitarra</option>
+                        <option value="bajo">Bajo</option>
+                        <option value="piano">Piano</option>
+                        <option value="bateria">Batería</option>
+                        <option value="violin">Violín</option>
+                        <option value="saxofon">Saxofón</option>
+                    </select>
+                </div>
+                <button id="transcribe-btn" class="btn">Transcribir</button>
+            </div>
+            <div id="result" class="result-container">
+                <!-- Aquí se mostrará el resultado de la transcripción -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Más Buscados -->
+    <section id="mas-buscados" class="popular-section">
+        <div class="container">
+            <h2>Más Buscados</h2>
+            <div class="music-grid">
+                <div class="music-card">
+                    <div class="music-image">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 150'%3E%3Crect fill='%23333' width='200' height='150'/%3E%3Ctext fill='white' font-family='Arial' font-size='24' x='50' y='80'%3EQueen%3C/text%3E%3C/svg%3E" alt="Bohemian Rhapsody">
+                    </div>
+                    <div class="music-info">
+                        <h3>Bohemian Rhapsody</h3>
+                        <p>Queen</p>
+                        <div class="instrument-tags">
+                            <span class="tag guitarra">Guitarra</span>
+                            <span class="tag piano">Piano</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="music-card">
+                    <div class="music-image">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 150'%3E%3Crect fill='%23333' width='200' height='150'/%3E%3Ctext fill='white' font-family='Arial' font-size='24' x='40' y='80'%3EGuns N' Roses%3C/text%3E%3C/svg%3E" alt="Sweet Child O' Mine">
+                    </div>
+                    <div class="music-info">
+                        <h3>Sweet Child O' Mine</h3>
+                        <p>Guns N' Roses</p>
+                        <div class="instrument-tags">
+                            <span class="tag guitarra">Guitarra</span>
+                            <span class="tag bajo">Bajo</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="music-card">
+                    <div class="music-image">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 150'%3E%3Crect fill='%23333' width='200' height='150'/%3E%3Ctext fill='white' font-family='Arial' font-size='24' x='60' y='80'%3EBillie Jean%3C/text%3E%3C/svg%3E" alt="Billie Jean">
+                    </div>
+                    <div class="music-info">
+                        <h3>Billie Jean</h3>
+                        <p>Michael Jackson</p>
+                        <div class="instrument-tags">
+                            <span class="tag bateria">Batería</span>
+                            <span class="tag bajo">Bajo</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Recomendados -->
+    <section id="recomendados" class="recommended-section">
+        <div class="container">
+            <h2>Recomendados para Ti</h2>
+            <div class="music-grid">
+                <div class="music-card">
+                    <div class="music-image">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 150'%3E%3Crect fill='%23333' width='200' height='150'/%3E%3Ctext fill='white' font-family='Arial' font-size='24' x='50' y='80'%3EImagine%3C/text%3E%3C/svg%3E" alt="Imagine">
+                    </div>
+                    <div class="music-info">
+                        <h3>Imagine</h3>
+                        <p>John Lennon</p>
+                        <div class="instrument-tags">
+                            <span class="tag piano">Piano</span>
+                            <span class="tag guitarra">Guitarra</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="music-card">
+                    <div class="music-image">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 150'%3E%3Crect fill='%23333' width='200' height='150'/%3E%3Ctext fill='white' font-family='Arial' font-size='24' x='40' y='80'%3ESmoke on the Water%3C/text%3E%3C/svg%3E" alt="Smoke on the Water">
+                    </div>
+                    <div class="music-info">
+                        <h3>Smoke on the Water</h3>
+                        <p>Deep Purple</p>
+                        <div class="instrument-tags">
+                            <span class="tag guitarra">Guitarra</span>
+                            <span class="tag bajo">Bajo</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="music-card">
+                    <div class="music-image">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 150'%3E%3Crect fill='%23333' width='200' height='150'/%3E%3Ctext fill='white' font-family='Arial' font-size='24' x='60' y='80'%3ESmooth%3C/text%3E%3C/svg%3E" alt="Smooth">
+                    </div>
+                    <div class="music-info">
+                        <h3>Smooth</h3>
+                        <p>Santana ft. Rob Thomas</p>
+                        <div class="instrument-tags">
+                            <span class="tag guitarra">Guitarra</span>
+                            <span class="tag bateria">Batería</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Comunidad -->
+    <section id="comunidad" class="community-section">
+        <div class="container">
+            <h2>Música de la Comunidad</h2>
+            <div class="community-content">
+                <div class="upload-section">
+                    <h3>Sube tu propia transcripción</h3>
+                    <div class="upload-form">
+                        <div class="input-group">
+                            <label for="song-title">Título de la canción:</label>
+                            <input type="text" id="song-title" placeholder="Nombre de la canción">
+                        </div>
+                        <div class="input-group">
+                            <label for="artist">Artista:</label>
+                            <input type="text" id="artist" placeholder="Nombre del artista">
+                        </div>
+                        <div class="input-group">
+                            <label for="file-upload">Archivo de partitura:</label>
+                            <input type="file" id="file-upload" accept=".pdf,.jpg,.png">
+                        </div>
+                        <button id="upload-btn" class="btn">Subir a la Comunidad</button>
+                    </div>
+                </div>
+                <div class="community-grid">
+                    <h3>Transcripciones Recientes</h3>
+                    <div class="community-music-grid">
+                        <div class="community-music-card">
+                            <div class="user-info">
+                                <div class="avatar">JS</div>
+                                <div class="user-details">
+                                    <h4>Juan Sánchez</h4>
+                                    <p>Hace 2 días</p>
+                                </div>
+                            </div>
+                            <div class="music-details">
+                                <h5>Hotel California</h5>
+                                <p>The Eagles</p>
+                                <div class="instrument-tags">
+                                    <span class="tag guitarra">Guitarra</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="community-music-card">
+                            <div class="user-info">
+                                <div class="avatar">MP</div>
+                                <div class="user-details">
+                                    <h4>María Pérez</h4>
+                                    <p>Hace 5 días</p>
+                                </div>
+                            </div>
+                            <div class="music-details">
+                                <h5>Take Five</h5>
+                                <p>Dave Brubeck</p>
+                                <div class="instrument-tags">
+                                    <span class="tag saxofon">Saxofón</span>
+                                    <span class="tag bateria">Batería</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="community-music-card">
+                            <div class="user-info">
+                                <div class="avatar">AL</div>
+                                <div class="user-details">
+                                    <h4>Ana López</h4>
+                                    <p>Hace 1 semana</p>
+                                </div>
+                            </div>
+                            <div class="music-details">
+                                <h5>Clair de Lune</h5>
+                                <p>Claude Debussy</p>
+                                <div class="instrument-tags">
+                                    <span class="tag piano">Piano</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Transcripción Musical. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
